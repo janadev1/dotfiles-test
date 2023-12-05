@@ -43,15 +43,10 @@ fi
 
 # 2. Check if Neovim is already installed and if not, try to install automatically
 # TODO: check if Neovim < 9.x.x is installed, remove it (Ubuntu's case) and install new one
-if test "$(which nvim)"; then
+if test ! "$(which nvim)"; then
 	echo "Neovim isn't installed. Please provide Neovim semver (default: 0.9.4)"
 	read -r version
 	echo "Version selected is v$(version)"
-
-	if ! test "$(which wget)"; then
-		echo "wget isn't installed, can't download Neovim tarball."
-		exit
-	fi
 
 	wget "https://github.com/neovim/neovim/releases/download/v${version:-0.9.4}/nvim-linux64.tar.gz"
 	sudo tar xzvf nvim-linux64.tar.gz -C /opt/

@@ -1,3 +1,11 @@
+## To install
+
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/janadev1/dotfiles-test/main/install.sh)
+```
+
+## Notes
+
 Notes taken from the following examples:
 
 - CodelyTV/dotly
