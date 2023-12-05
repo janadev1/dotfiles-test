@@ -50,7 +50,7 @@ if test ! "$(which nvim)"; then
 	info "Neovim version selected is v${version}."
 
 	wget "https://github.com/neovim/neovim/releases/download/v${version:-0.9.4}/nvim-linux64.tar.gz" |
-		sudo tar xzvf nvim-linux64.tar.gz -C /opt/
+		sudo tar xz -C /opt/
 	# TODO: check that symlink doesn't exist first(?)
 	sudo ln -s /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
 
