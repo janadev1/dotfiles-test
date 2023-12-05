@@ -46,6 +46,7 @@ fi
 if test ! "$(which nvim)"; then
 	echo "Neovim isn't installed. Please provide Neovim semver (default: 0.9.4)"
 	read -r version
+	version=${version:-0.9.4}
 	echo "Version selected is v$(version)"
 
 	wget "https://github.com/neovim/neovim/releases/download/v${version:-0.9.4}/nvim-linux64.tar.gz"
