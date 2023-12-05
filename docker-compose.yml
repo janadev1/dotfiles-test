@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+  ubuntu:
+    build:
+      context: .
+    command: tail -F anything
+    volumes:
+      - .:/home/jana/.dotfiles
