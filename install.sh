@@ -46,11 +46,11 @@ fi
 if test ! "$(which nvim)"; then
 	echo "Neovim isn't installed. Please provide Neovim semver (default: 0.9.4)"
 	read -r version
-	version=${version:-0.9.4}
-	echo "Version selected is v$(version)"
+	version=${version:=0.9.4}
+	info "Neovim version selected is v${version}."
 
-	wget "https://github.com/neovim/neovim/releases/download/v${version:-0.9.4}/nvim-linux64.tar.gz"
-	sudo tar xzvf nvim-linux64.tar.gz -C /opt/
+	wget "https://github.com/neovim/neovim/releases/download/v${version:-0.9.4}/nvim-linux64.tar.gz" |
+		sudo tar xzvf nvim-linux64.tar.gz -C /opt/
 	# TODO: check that symlink doesn't exist first(?)
 	sudo ln -s /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
 
