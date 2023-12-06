@@ -4,6 +4,35 @@
 bash <(wget -qO- https://raw.githubusercontent.com/janadev1/dotfiles-test/main/install.sh)
 ```
 
+## Dependencies
+
+**System**
+
+- i3wm: program + config
+- polybar
+
+**Terminal, shell, etc**
+
+- Alacritty
+  - Starship
+  - Zsh(?): autocompletion
+  -
+
+**Programming**
+
+- Astronvim
+  - Neovim 0.8+ (not nightly)
+  - Nerd Fonts
+  - Tree Sitter CLI
+  - Clipboard tool
+  - ripgrep
+  - lazygit
+- Python
+  - pyenv
+  - poetry
+- Node.js
+  - nvm
+
 ## Notes
 
 Notes taken from the following examples:

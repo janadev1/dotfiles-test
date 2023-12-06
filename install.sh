@@ -82,8 +82,12 @@ fi
 info "All applications restored."
 echo ""
 
+# 3. Install Astronvim and personal Astronvim config
+info "Installing Astronvim..."
+
 # 3. Create dotfiles folder and download Neovim config into it from Github
-info "(TODO) Installing configuration files..."
+info "Installing configuration files..."
+
 # 4. Create symlink to Neovim config
 
 success "Dotfiles installation completed succesfully!"

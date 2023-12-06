@@ -1,0 +1,6 @@
+[submodule "astronvim-config"]
+	path = astronvim-config
+	url = git@github.com:janadev1/astronvim-config.git
+[submodule "AstroNvim"]
+	path = AstroNvim
+	url = https://github.com/AstroNvim/AstroNvim
